@@ -1,0 +1,26 @@
+$color: (
+    primary: (
+        dark-blue: hsl(233, 47%, 7%),
+        dark-des-blue: hsl(244, 38%, 16%),
+        violet: hsl(277, 64%, 61%),
+    ),
+
+    neutral: (
+        white: hsl(0, 0%, 100%),
+        sli-tran-white: hsla(0, 0%, 100%, 0.75),
+        tran-white: hsla(0, 0%, 100%, 0.6),
+    ),
+);
+
+$font: (
+    size: 15px,
+    family: (
+        primary: 'Inter',
+        secondary: 'Lexend Deca',
+    ),
+
+    weight: (
+        regular: 400,
+        bold: 700,
+    ),
+);

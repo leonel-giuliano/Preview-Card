@@ -1,0 +1,125 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+@use 'sass:map';
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    src: local('Inter Regular'),
+        url('../../fonts/Inter-VariableFont_slnt\,wght.ttf')
+        format('ttf');
+    font-size: 100 900;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    font-display: swap;
+    src: local('Lexend Deca Regular'),
+        url('../../fonts/LexendDeca-VariableFont_wght.ttf')
+        format('ttf');
+    font-size: 100 900;
+}
+
+html {
+    font-size: map-get(
+        variables.$font,
+        size
+    );
+}
+
+body {
+    font-family: map-get(
+        variables.$font,
+        family,
+        primary
+    );
+    font-weight: map-get(
+        variables.$font,
+        weight,
+        regular
+    );
+    text-align: center;
+    color: map-get(
+        variables.$color,
+        neutral,
+        tran-white
+    );
+
+    @include mixins.screen {
+        font-size: .875rem;
+        text-align: left;
+    }
+}
+
+.title {
+    font-family: map-get(
+        variables.$font,
+        family,
+        primary
+    );
+    font-weight: map-get(
+        variables.$font,
+        weight,
+        bold
+    );
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: map-get(
+        variables.$color,
+        neutral,
+        white
+    );
+
+    span {
+        color: map-get(
+            variables.$color,
+            primary,
+            violet
+        );
+    }
+}
+
+.subtitle {
+    font-weight: map-get(
+        variables.$font,
+        weight,
+        regular
+    );
+    line-height: 2rem;
+    text-wrap: balance;
+
+    @include mixins.screen {
+        line-height: 1.5rem;
+        text-wrap: revert;
+    }
+}
+
+.amount {
+    text-transform: uppercase;
+    font-family: map-get(
+        variables.$font,
+        family,
+        secondary
+    );
+
+    span {
+        text-transform: none;
+        font-family: map-get(
+            variables.$font,
+            family,
+            primary
+        );
+        font-weight: map-get(
+            variables.$font,
+            weight,
+            bold
+        );
+        font-size: 1.5rem;
+        color: map-get(
+            variables.$color,
+            neutral,
+            white
+        );
+    }
+}

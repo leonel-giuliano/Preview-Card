@@ -1,0 +1,9 @@
+@use './functions';
+
+@mixin screen {
+    $width: functions.px-rem(600px);
+
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
