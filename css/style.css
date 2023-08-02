@@ -117,7 +117,7 @@ body {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   height: 100%;
   background-color: hsl(233, 47%, 7%);
 }
@@ -130,7 +130,7 @@ body {
 .card {
   grid-template-rows: min-content repeat(2, 1fr);
   width: min(25rem, 90%);
-  height: min(60rem, 95%);
+  height: min(60rem, 90%);
   background-color: hsl(244, 38%, 16%);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -195,6 +195,7 @@ body {
 .attribution {
   position: absolute;
   top: 0;
+  transform: translateY(-50%);
 }
 
 @media only screen and (min-width: 40rem) {

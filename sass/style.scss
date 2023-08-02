@@ -2,7 +2,7 @@
 @use './abstracts';
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     height: 100%;
     background-color: map-get(
         abstracts.$color,
@@ -19,7 +19,7 @@ body {
 .card {    
     grid-template-rows: min-content repeat(2, 1fr);
     width: min(25rem, 90%);
-    height: min(60rem, 95%);
+    height: min(60rem, 90%);
     background-color: map-get(
         abstracts.$color,
         primary,
@@ -93,6 +93,7 @@ body {
 .attribution {
     position: absolute;
     top: 0;
+    transform: translateY(-50%);
 }
 
 @include abstracts.screen {
