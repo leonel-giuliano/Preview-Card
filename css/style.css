@@ -55,13 +55,13 @@ table {
 @font-face {
   font-family: "Inter";
   font-display: swap;
-  src: local("Inter Regular"), url("../../fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+  src: local("Inter Regular"), url("../../fonts/inter-variablefont_slntwght-webfont.woff") format("ttf");
   font-size: 100 900;
 }
 @font-face {
   font-family: "Lexend Deca";
   font-display: swap;
-  src: local("Lexend Deca Regular"), url("../../fonts/LexendDeca-VariableFont_wght.ttf") format("ttf");
+  src: local("Lexend Deca Regular"), url("../../fonts/lexenddeca-variablefont_wght-webfont.woff") format("ttf");
   font-size: 100 900;
 }
 html {
